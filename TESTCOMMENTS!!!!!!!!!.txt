@@ -15,3 +15,7 @@ To check if a site was visited, I stored the id's of the visited pages in an arr
 also I have used stylus mixins for the scrollbar
 
 Have a nice day greetings from mexico 🇲🇽 :)
+
+! Important
+I changed the port in the api to 8888 and I forget what was before you can match the ports between frontend and backend in the files
+./frontend/src/services/news.service.ts == ./api/index.js

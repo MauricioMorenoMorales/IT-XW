@@ -66,12 +66,12 @@ export default defineComponent({
 		$route() {
 			console.log(this.$route.params.new);
 			this.contentData = this.newsData.find(
-				element => element.id == this.$route.params.new,
+				(element: any) => element.id == this.$route.params.new,
 			);
 		},
 	},
 	methods: {
-		goToPage(url) {
+		goToPage(url: string) {
 			window.open(url, '_blank');
 		},
 	},

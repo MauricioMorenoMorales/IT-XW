@@ -39,14 +39,14 @@ export default defineComponent({
 	props: ['newsData'],
 	data() {
 		return {
-			visited: [],
+			visited: [] as Array<any>,
 		};
 	},
 	mounted() {
 		console.log(this.newsData);
 	},
 	methods: {
-		goToNew(id) {
+		goToNew(id: any) {
 			this.visited.push(id);
 			this.$router.push(id);
 		},
