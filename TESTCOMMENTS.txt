@@ -1,0 +1,17 @@
+HI!
+The project was done in less than 4-5 hours you can check the timing in the repository.
+
+I have not worked with tests in vuejs (only react even with typescript) so I decided to do the another constraints first.
+
+I have used stylus and pug because I like the identation only based technologies.
+in pug you can save like 40% of html coding lines because it has no closing tags
+
+I managed petitions with an axios module ./src/services/news.service.ts
+
+The project root in the app component is where the data is stored, and the another two components access to the data using their props
+To get the data I used the url of the page to access different data in the Content component while the navigation component changes the url
+To check if a site was visited, I stored the id's of the visited pages in an array.
+
+also I have used stylus mixins for the scrollbar
+
+Have a nice day greetings from mexico 🇲🇽 :)
