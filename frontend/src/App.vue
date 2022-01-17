@@ -1,8 +1,8 @@
 <template lang="pug">
 .home
   .body
-    content
     navigation
+    content
 </template>
 
 <style lang="stylus">
@@ -13,8 +13,7 @@
   color #2c3e50
 .body
   display grid
-  grid-template-columns 1fr 1fr
-  gap 30px
+  grid-template-columns 50% 50%
 </style>
 
 <script lang="ts">
