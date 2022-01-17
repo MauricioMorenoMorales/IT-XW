@@ -1,8 +1,8 @@
 <template lang="pug">
 .home
   .body
-    navigation
-    content
+    navigation(:newsData="newsList")
+    content(:newsData="newsList")
 </template>
 
 <style lang="stylus">
@@ -11,9 +11,13 @@
   -moz-osx-font-smoothing grayscale
   font-size 62.5%
   color #2c3e50
+html
+  overflow hidden
 .body
   display grid
-  grid-template-columns 50% 50%
+  max-width 1440px
+  margin 0 auto
+  grid-template-columns 500px 1fr
 </style>
 
 <script lang="ts">
@@ -30,11 +34,6 @@ export default defineComponent({
 	components: {
 		Content,
 		Navigation,
-	},
-	provide() {
-		return {
-			news: this.newsList,
-		};
 	},
 	mounted() {
 		this.getNews();
